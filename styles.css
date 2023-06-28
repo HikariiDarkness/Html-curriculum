@@ -1,0 +1,195 @@
+body{
+    background-color: #ffffff;
+}
+.text-black{
+    color: #01080e;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.2rem;
+}
+.text-white{
+    color: #ffffff;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.text-white-big{
+    color: #ffffff;
+    font-family: 'Noto Serif', serif;
+    font-size: 1.5rem;
+}
+.title{
+    color: #ffffff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3rem;
+}
+.title2{
+    color: #ffffff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.6rem;
+}
+.title3{
+    color: #01080e;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.6rem;
+}
+.subtitle{
+    color: #ffffff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+}
+.subtitle2{
+    color: #ffffff;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+}
+.subtitle3{
+    color: #01080e;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+}
+
+.flex{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.flex2{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container.grid {
+    width: 80%;
+    display: grid;
+    background-color: #83bdf6;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    padding: 0;
+    margin: 0;
+ }
+.container.grid2 {
+    width: 80%;
+    background-color: #83bdf6;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    padding: 0;
+    margin: 0;
+    align-items: start;
+}
+.container.grid3 {
+    width: 80%;
+    background-color: #FFFAF4;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    padding: 0;
+    margin: 0;
+    align-items: start;
+}
+.container.two-columns{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    padding: 0;
+    margin: 0;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.profile-pic{
+    height: 250px;
+    padding: 20px;
+}
+
+li{
+    list-style:circle;
+    color: white;
+ }
+.about-me, .contact-info, .academic-background, .job-exp, .certifications, .skills, .languages{
+    padding: 0 10%;
+}
+.list-info{
+    list-style: none;
+}
+
+/* Big devices (laptops, pc´s)  */
+@media(min-width: 1200px){
+    .container.grid {
+        align-items: center;
+    }
+}
+/* Medium Devices (Tablets)  */
+@media(min-width: 580px) and (max-width: 950px){
+    .container.grid {
+        width: 80%;
+        display: inline-grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.5fr 1fr;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+     }
+     .profile-pic{
+        height: 200px;
+    }
+    .title{
+        color: #01080e;
+        font-family: 'Libre Baskervillsse', serif;
+        font-size: 2.8rem;
+    }
+    .subtitle{
+        color: #01080e;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.4rem;
+    }
+}
+/* Small devices (smartphones)  */
+@media(min-width: 360px) and (max-width: 579px){
+    .container.grid {
+        width: 80%;
+        display: inline-grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.5fr 1fr;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+     }
+    .container.two-columns{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        padding: 0;
+        margin: 0;
+    }
+    .profile-pic{
+        height: 200px;
+    }
+    .title{
+        color: #ffffff;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 2.3rem;
+    }
+    .title2{
+        color: #ffffff;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.7rem;
+    }
+    .title3{
+        color: #01080e;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.7rem;
+    }
+    .subtitle{
+        color: #ffffff;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 1.2rem;
+    }
+}
